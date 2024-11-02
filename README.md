@@ -7,7 +7,7 @@ Azure End to End Data Engineering Project
 
 ### System Architecture
 
-![Alt text](https://www.databricks.com/sites/default/files/inline-images/building-data-pipelines-with-delta-lake-120823.png?v=1702318922 "a title")
+![Alt text](./assets/Architechture.png "a title")
 
 
 ### Power BI Report
