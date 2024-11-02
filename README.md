@@ -12,6 +12,7 @@ Azure End to End Data Engineering Project
 
 ### Power BI Report
 
+![Alt text](./assets/Powerbidash.png "a title")
 
 #### Tech stack
 - ADF
