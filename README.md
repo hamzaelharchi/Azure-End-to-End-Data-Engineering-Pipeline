@@ -1,7 +1,6 @@
 
 
 ### Project Overview
-
 Welcome to this Azure Data Engineering Project! This project demonstrates a full end-to-end data pipeline on Azure, designed to process and visualize customer demographics data. While primarily built as a learning exercise, this project adheres to best practices in data architecture, security, and CI/CD to simulate real-world scenarios.
 
 The pipeline takes customer data from an on-premises SQL database, transforms it using Azure Data Factory and Databricks, and visualizes insights through Power BI. Key metrics include product sales by gender, product category, total sales revenue, and other KPIs relevant for business intelligence.
@@ -28,14 +27,14 @@ The pipeline takes customer data from an on-premises SQL database, transforms it
     
 ---
 
-### 1. Data Source
+### Data Source
 
 - **AdventureWorksLT Database**: This sample database contains tables for customers, products, and sales, simulating a real customer analytics scenario.
 - **Data Storage**: Data is ingested from SQL Server into Azure Data Lake in a structured format (Parquet), optimized for transformations and querying.
 
 For detailed setup instructions, see [`docs/data_source.md`](docs/data_source.md).
 
-### 2. Setup and Configuration
+### Setup and Configuration
 
 This project requires setting up key Azure resources including:
    - **Azure Data Factory** for data ingestion
@@ -44,42 +43,42 @@ This project requires setting up key Azure resources including:
 
 The configuration includes secure access management with Azure Key Vault and Entra ID.
 
-Refer to [`docs/setup.md`](docs/setup.md) for the full setup process.
+Refer to [`docs/setup.md`](docs/1_setup.md) for the full setup process.
 
-### 3. Data Pipeline
+### Data Pipeline
 
 The data pipeline in **Azure Data Factory** orchestrates data movement and transformation. Data is ingested from an on-premises SQL Server to Azure Data Lake in Parquet format.
 
-See [`docs/data_ingestion.md`](docs/data_ingestion.md) for more information on pipeline steps and configurations.
+See [`docs/data_ingestion.md`](docs/2_data_ingestion.md) for more information on pipeline steps and configurations.
 
-### 4. Data Transformation
+### Data Transformation
 
 Data transformation is handled in **Databricks**, organized in three layers:
    - **Bronze** ->  **Silver** ->  **Gold**: 
 
-More details in [`docs/data_transformation.md`](docs/data_transformation.md).
+More details in [`docs/data_transformation.md`](docs/3_data_transformation.md).
 
-### 5. Data Visualization
+### Data Visualization
 
 **Power BI** connects directly to Databricks, allowing users to interact with the data model and filter by key metrics like gender and product category.
 ![Alt text](./assets/Powerbidash.png "a title")
 
-For report setup, check [`docs/data_visualization.md`](docs/data_visualization.md).
+For report setup, check [`docs/data_visualization.md`](docs/4_data_visualization.md).
 
-### 6. Security
+### Security
 
 Security is managed via:
    - **Azure Key Vault**: Stores secrets and credentials securely.
    - **Managed Identities**: Allows secure connections between services without exposing credentials.
    - **Entra ID**: Provides role-based access control (RBAC).
 
-Refer to [`docs/security.md`](docs/security.md) for more on security setup.
+Refer to [`docs/security.md`](docs/5_security.md) for more on security setup.
 
-### 7. CI/CD Pipeline
+### CI/CD Pipeline
 
 The project uses **Azure DevOps** with ARM templates for automated deployment, making it easy to reproduce or modify the setup.
 
-See [`docs/cicd.md`](docs/cicd.md) for the CI/CD setup.
+See [`docs/cicd.md`](docs/6_cicd.md) for the CI/CD setup.
 
 ---
 
