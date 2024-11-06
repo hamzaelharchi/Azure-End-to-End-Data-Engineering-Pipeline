@@ -1,10 +1,7 @@
 
 
 ### Project Overview
-Welcome to this Azure Data Engineering Project! This project demonstrates a full end-to-end data pipeline on Azure, designed to process and visualize customer demographics data. While primarily built as a learning exercise, this project adheres to best practices in data architecture, security, and CI/CD to simulate real-world scenarios.
-
-The pipeline takes customer data from an on-premises SQL database, transforms it using Azure Data Factory and Databricks, and visualizes insights through Power BI. Key metrics include product sales by gender, product category, total sales revenue, and other KPIs relevant for business intelligence.
-
+Welcome to this Azure Data Engineering Project, which demonstrates an end-to-end data pipeline on Azure to process and visualize customer demographics. Built as a learning exercise, it follows best practices in data architecture, security, and CI/CD. The pipeline extracts data from an on-premises SQL database, transforms it using Azure Data Factory and Databricks, and visualizes key metrics like product sales by gender, category, total revenue, and other business KPIs in Power BI.
 > **Note:** This project is for learning and demonstration purposes.
 
 ### Architecture Diagram
