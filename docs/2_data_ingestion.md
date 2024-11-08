@@ -1,7 +1,7 @@
 
-![img_6.png](img_6.png)
-
 ### Data Ingestion with Azure Data Factory
+
+![img_6.png](img_6.png)
 
 ### 1. Lookup Activity: Fetching Table Schema and Names
 
